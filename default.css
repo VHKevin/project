@@ -1,0 +1,388 @@
+/*GENERAL*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&family=Public+Sans&family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/*NAVIGATIEBALK*/
+
+  .navigatiebalk li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navigatiebalk li.brand {
+    display: block;
+    color: beige;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 100px;
+    margin-left: 100px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navigatiebalk li a:hover:not(.active) {
+    background-color: beige;
+    color: black;
+  }
+  
+  .navigatiebalk .active {
+    background-color: beige;
+    color: black;
+  }
+
+
+  .navigatiebalk ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  .navigatiebalk li {
+    float: left;
+  }
+
+/*FOOTER GENERAL*/
+
+  footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+  }
+
+  footer .left {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  footer .right {
+    text-align: right;
+  }
+
+  footer .right img {
+    max-width: 40px;
+    margin-right: 70px;
+  }
+
+  footer.CV {
+    color: black;;
+  }
+ 
+
+/*GENERAL TEXT*/
+
+ 
+
+  /*START CONTENT*/
+
+  .main-home {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    padding: 8em 2em 0 2em;
+  }
+
+  .main-home>img {
+    width: 70%;
+    margin: 0 10%;
+    border-radius: 5em;
+  }
+
+  .main-home>article>h1 {
+    margin-bottom: 1em;
+    padding-left: 1em;
+    margin-left: 5rem;
+    font-size: xx-large;
+    color: orange;
+  }
+  .main-home>article>p {
+    padding-bottom: 1em;
+    font-size: 1.5rem;
+  }
+
+  /*ERVARING CONTENT*/
+
+  .mainExp {
+    padding: 7em 2em 6em 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+  }
+
+  .mainExp .leftArticle {
+    grid-column: 1 / span 2;
+  }
+
+  .mainExp .rightArticle {
+    grid-column: 2 / span 2;
+  }
+
+  .mainExp .titel {
+    color: darkorange;
+  }
+
+  .mainExp p {
+    padding-top: 1em;
+    font-size: x-large;
+  }
+
+  .mainExp img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    max-height: 12em;
+    margin: 3.5em auto 0 auto;
+    width: 80%;
+  }
+
+  /*HOBBY CONTENT*/
+
+  .mainHobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .mainHobby .afbeelding-met-tekst {
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .mainHobby img {
+    max-height: 20em ;
+    padding: 1em;
+    height: auto;
+    margin-right: 100px;
+
+  }
+  .mainHobby .text-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainHobby .titel {
+    margin-top: 80px;
+  }
+
+  .mainHobby .titel1 {
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .mainHobby article {
+    margin: 2em;
+  }
+
+  .mainHobby table {
+    margin-top: 2em;
+    border-collapse: collapse;
+    border: 0.1em dashed;
+  }
+
+  .mainHobby tr {
+    border: 0.1em dashed;
+  }
+
+  .mainHobby th, .mainHobby td {
+    padding: 0.5em;
+  }
+
+  .mainHobby caption {
+    margin-bottom: 15px;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  /*CONTACT PAGE*/
+
+  body.contact {
+    background: black;
+    color: black;
+  }
+
+  .container {
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .contact-box {
+    background: white; 
+    display: flex;
+  }
+
+  .contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+  }
+
+  .contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #333;
+    color: white;
+  }
+
+  h1.contact {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .container p {
+    margin-bottom: 40px;
+    color: white;
+  }
+
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .input-row .input-group {
+    flex-basis: 45%;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  label {
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+  }
+
+  button {
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+
+  .contact-left h3 {
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .contact-right h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  tr td:first-child {
+    padding-right: 20px;
+  }
+
+  tr td {
+    padding-top: 20px;
+  }
+
+  /*CV CONTENT*/
+
+  body.CV {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body.CV p {
+    color: black;
+  }
+
+  body.CV h1 {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: black;
+    margin-left: 10px;
+  }
+
+  body.CV h2 {
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .cvContainer {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .job-title {
+    color: #007acc;
+    margin-left: 10px;
+  }
+
+  ul.cv {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+  }
+
+  ul.cv li {
+    margin-bottom: 10px;
+  }
+
+  .cvContainer .contact {
+    margin-top: 20px;
+  }
+
+  h3.job-title {
+    color: black;
+  }
